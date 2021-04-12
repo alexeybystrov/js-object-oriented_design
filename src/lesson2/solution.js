@@ -6,6 +6,7 @@ export default class Truncater {
 
   constructor(options = {}) {
     this.options = { ...this.constructor.defaultOptions, ...options };
+    // или так this.options = { ...Truncater.defaultOptions, ...options };
   }
 
   truncate(text, options = {}) {
